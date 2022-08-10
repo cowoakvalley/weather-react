@@ -9,6 +9,12 @@
   color: rgb(135, 135, 135);
 }
 
+.searchform {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 ul {
   list-style-type: none;
   padding: 0px;

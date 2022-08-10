@@ -9,17 +9,16 @@ export default function Weather() {
     <div className="Weather">
       <div>
         <form>
-          <div>
+          <div className="searchform">
             <div>
               <input
                 type="search"
                 placeholder="Enter a city..."
-                className="form-control"
                 autocomplete="off"
               />
             </div>
             <div>
-              <input type="submit" value="Search" />
+              <input type="submit" value="Search"/>
             </div>
           </div>
         </form>
@@ -46,7 +45,7 @@ export default function Weather() {
             </div>
           </div>
           <div>
-            <ul>
+            <ul className="weatherItems">
               <li>Humidity: 35%</li>
               <li>Wind: 2 m/s</li>
             </ul>
@@ -61,7 +60,7 @@ export default function Weather() {
               target="_blank"
               rel="noopener noreferrer"
             >
-            Open-source coded
+              Open-source coded
             </a>
           </span>
           _by cowoakvalley
