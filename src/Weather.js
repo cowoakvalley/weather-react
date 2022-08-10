@@ -7,10 +7,10 @@ export default function Weather() {
   };
   return (
     <div className="Weather">
-      <div className="container">
-        <form className="mb-3">
-          <div className="row">
-            <div className="col-9">
+      <div>
+        <form>
+          <div>
+            <div>
               <input
                 type="search"
                 placeholder="Enter a city..."
@@ -18,12 +18,8 @@ export default function Weather() {
                 autocomplete="off"
               />
             </div>
-            <div className="col-3">
-              <input
-                type="submit"
-                value="Search"
-                className="btn btn-primary w-100"
-              />
+            <div>
+              <input type="submit" value="Search" />
             </div>
           </div>
         </form>
@@ -32,25 +28,24 @@ export default function Weather() {
           <li>Friday 20:32</li>
           <li></li>
         </ul>
-        <div className="row">
-          <div className="col-6">
-            <div className="clearfix">
-              <div className="d-flex weather-temperature">
+        <div>
+          <div>
+            <div>
+              <div>
                 <img
                   src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
                   alt="sunny"
-                  className="float-left"
                 />
-                <div className="float-left">
+                <div>
                   <strong>15</strong>
-                  <span className="units">
+                  <span>
                     <a href="/">°C </a> |<a href="/">°F</a>
                   </span>
                 </div>
               </div>
             </div>
           </div>
-          <div className="col-6">
+          <div>
             <ul>
               <li>Humidity: 35%</li>
               <li>Wind: 2 m/s</li>
@@ -60,14 +55,16 @@ export default function Weather() {
       </div>
       <p>
         <small>
-          <a
-            href="https://github.com/cowoakvalley/vanilla-weather-app"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <span>
+            <a
+              href="https://github.com/cowoakvalley/weather-react"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
             Open-source coded
-          </a>
-          by cowoakvalley
+            </a>
+          </span>
+          _by cowoakvalley
         </small>
       </p>
     </div>
