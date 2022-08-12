@@ -10,42 +10,46 @@ export default function Weather() {
       <div>
         <form>
           <div className="searchform">
-            <div>
+            <div className="search">
               <input
                 type="search"
                 placeholder="Enter a city..."
                 autocomplete="off"
+                className="form-control"
+                autoFocus="on"
               />
             </div>
-            <div>
-              <input type="submit" value="Search" />
+            <div className="submit">
+              <input
+                type="submit"
+                value="Search"
+                className="btn btn-outline-info"
+              />
             </div>
           </div>
         </form>
-        <h1>{weatherData.city}</h1>
-        <ul>
-          <li>Friday 20:32</li>
-          <li></li>
-        </ul>
-        <div>
-          <div>
-            <div>
-              <div>
-                <img
-                  src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
-                  alt="sunny"
-                />
-                <div>
-                  <strong>15</strong>
-                  <span>
-                    <a href="/">°C </a> |<a href="/">°F</a>
-                  </span>
-                </div>
-              </div>
-            </div>
+        <div className="headline">
+          <h1>London</h1>
+        </div>
+        <p>
+          Friday 20:32
+          <br />
+          Sunny
+        </p>
+        <div className="row">
+          <div className="col-6 current-weather">
+            <img
+              src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+              alt="sunny"
+              className="image"
+            />
+            <span className="temperature">15</span>
+            <span className="unit">
+              <a href="/">°C</a> | <a href="/">°F</a>
+            </span>
           </div>
-          <div>
-            <ul className="weatherItems">
+          <div className="col-6">
+            <ul className="weather-items">
               <li>Humidity: 35%</li>
               <li>Wind: 2 m/s</li>
             </ul>

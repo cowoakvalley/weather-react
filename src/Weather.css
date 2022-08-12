@@ -1,11 +1,11 @@
 .Weather {
-  max-width: 600px;
-  margin: 40px auto;
+  margin-bottom: 20px;
   padding: 20px 20px 20px 20px;
   border: solid 1px;
   border-color: lightgray;
   border-radius: 5px;
   color: rgb(135, 135, 135);
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .searchform {
@@ -14,14 +14,43 @@
   justify-content: center;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0px;
-  line-height: 20px;
+.searchform .search {
+  margin-right: 5px;
 }
 
-h1 {
+ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+.headline p {
+  line-height: 10px;
+}
+
+.headline h1 {
   font-size: 25px;
   font-weight: 400;
   color: dimgray;
+  margin-top: 20px;
+}
+
+.temperature {
+  font-size: 64px;
+  color: dimgray;
+  vertical-align: middle;
+}
+
+.current-weather {
+  line-height: 64px;
+}
+
+.unit {
+  margin-left: 4px;
+  position: relative;
+  top: -18px;
+}
+
+.weather-items {
+  text-align: left;
+  margin-left: 30px;
 }
