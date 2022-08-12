@@ -52,18 +52,6 @@ export default function Weather() {
           </div>
         </div>
       </div>
-      <p>
-        <small>
-          <a
-            href="https://github.com/cowoakvalley/weather-react"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Open-source coded
-          </a>{" "}
-          by cowoakvalley
-        </small>
-      </p>
     </div>
   );
 }
