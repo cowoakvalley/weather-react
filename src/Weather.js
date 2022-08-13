@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Weather.css";
+import axios from "axios";
 
 export default function Weather() {
-  let weatherData = {
-    city: "London",
-  };
+  let [weatherData, setWeatherData] = useState({});
+  
+  
+  const apiKey = "53289dc3449e15019adc28a0b3e155d4";
+  const apiURL = `https://api.openweathermap.org/data/2.5/weather?q=${weatherData.city}&appid=${apiKey}&units=metric`;
+
   return (
     <div className="Weather">
       <div>
@@ -29,7 +33,7 @@ export default function Weather() {
           </div>
         </form>
         <div className="headline">
-          <h1>London</h1>
+          <h1>{weatherData.city}</h1>
         </div>
         <p>
           Friday 20:32
