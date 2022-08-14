@@ -18,13 +18,10 @@
   margin-right: 5px;
 }
 
-ul {
+.headline ul {
   list-style-type: none;
   margin: 0;
-}
-
-.headline p {
-  line-height: 10px;
+  padding: 0;
 }
 
 .headline h1 {
@@ -42,6 +39,7 @@ ul {
 
 .current-weather {
   line-height: 64px;
+  
 }
 
 .unit {
@@ -53,4 +51,7 @@ ul {
 .weather-items {
   text-align: left;
   margin-left: 30px;
+  margin-top: 18px;
+  list-style-type: none;
+
 }
