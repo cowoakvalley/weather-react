@@ -1,0 +1,10 @@
+.WeatherForecast {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  line-height: 0px;
+  opacity: 0.9;
+}
+
+.weatherForecast-temeprature-min {
+  opacity: 0.6;
+}
