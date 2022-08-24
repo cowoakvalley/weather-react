@@ -5,6 +5,10 @@
   opacity: 0.9;
 }
 
-.weatherForecast-temeprature-min {
+.WeatherForecast-temperature-min {
   opacity: 0.6;
+}
+
+.forecast-image {
+  max-height: 65px;
 }
